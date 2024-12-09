@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/main.png" type="image/x-icon">
+    <title>Dota Picker</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+        <h1>Dota Picker</h1>
+    </header>
+    <div class="container">
+        <div class="hero-list">
+            <input type="text" id="hero-input" placeholder="Search Hero" oninput="filterHeroes()">
+            <ul id="heroes">
+                <!-- Герои -->
+            </ul>
+        </div>
+        <div class="selected-hero-container">
+            <div class="selected-heroes" id="selectedHeroes">
+                <!-- выбранные герои -->
+            </div>
+            <div class="counter-list">
+                <h2>Best Counter Picks</h2>
+                <div id="counters">
+                   <!-- Контрпики -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Dota Picks</p>
+    </footer>
+
+    <script th:src="@{/js/scripts.js}"></script>
+</body>
+</html>
